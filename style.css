@@ -26,3 +26,29 @@ body {
     font-style: italic;
     color: rgb(18, 19, 18);
 }
+
+#findName {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+#error {
+    color: rgb(18, 59, 241);
+    font-size: 30px;
+}
+
+.akan {
+    color: #0ff8c6;
+    font-size: 15px;
+    text-align: justify;
+    width:20%;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.akan h3 {
+    color: #ff3300;
+    font-weight: 700;
+}

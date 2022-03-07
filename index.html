@@ -5,37 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="card">
             <h1> Find your Akan Name </h1>
+            <div class="div1">
             <form action="">
                 <!-- <inputmale  -->
                 <label for="male"> Male: </label>
-                <input type="radio" id="male" name="gender" required> <br> <br>
+                <input type="radio" id="male" name="gender" value="male" required> <br> <br>
 
                 <!-- inputfemale  -->
                 <label for="female"> Female: </label>
-                <input type="radio" id="female" name="gender" required> <br> <br>
+                <input type="radio" id="female" name="gender" value="female" required> <br> <br>
 
                 <!-- inputday  -->
                 <label for="day"> Day: </label>
-                <input type="number" id="day" name="day" placeholder="DD" value="day" min="1" max="31" required>
+                <input type="number" id="day" name="day" placeholder="DD" min="1" max="31" required>
 
                 <!-- inputmonth  -->
                 <label for="month"> Month: </label>
-                <input type="number" id="month" name="day" placeholder="MM" value="month" min="1" max="12" required>
+                <input type="number" id="month" name="day" placeholder="MM" min="1" max="12" required>
                 
                 <!-- inputyear  -->
                 <label for="year"> Year: </label>
-                <input type="number" id="year" name="year" placeholder="YYY" value="year" min="1970" max="2022" required>
+                <input type="number" id="year" name="year" placeholder="YYY" min="1970" max="2022" required>
                 <!-- inputbutton  -->
-                <input type="submit" id="findAkanName">
+                <input type = "button" onclick = "getName()" value = "click">
+                </div1>
+                <h3 id="error"></h3>
+                    <h1 id="findName"></h1>
             </form>
         </div>
-    </div>
+        </div>
+        <div class="akan">
+        <h3> What are Akan Names? </h3>
+        <p> Akan names come from a traditional naming system for people from countries such as Togo, Ivory Coast and Ghana. <br> A child’s name is determined by factors surrounding his or her birth. For example, the day of their birth or the manner in which they were born may determine which name they get irrespective of their gender. <br> These Akan names signify the day one is born.</p>
+        </div>
     <script src="script.js"></script>
 </body>
 </html>

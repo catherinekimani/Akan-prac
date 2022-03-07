@@ -11,6 +11,21 @@
     <div class="container">
         <div class="card">
             <h1> Find your Akan Name </h1>
+            <form action="">
+                <!-- inputday  -->
+                <label for="day"> Day: </label>
+                <input type="number" id="day" name="day" placeholder="DD" value="day" min="1" max="31" required>
+
+                <!-- inputmonth  -->
+                <label for="month"> Month: </label>
+                <input type="number" id="month" name="day" placeholder="MM" value="month" min="1" max="12" required>
+                
+                <!-- inputyear  -->
+                <label for="year"> Year: </label>
+                <input type="number" id="year" name="year" placeholder="YYY" value="year" min="1970" max="2022" required>
+                <!-- inputbutton  -->
+                <input type="submit" id="findAkanName">
+            </form>
         </div>
     </div>
     <script src="script.js"></script>
